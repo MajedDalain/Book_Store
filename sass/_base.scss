@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    border: 1px solid green;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15rem [side-end full-start] 1fr [center-start] repeat(
+            8,
+            minmax(15rem, 1fr)
+        ) [center-end] 1fr [full-end];
+    grid-template-rows: 80vh repeat(4, min-content) 15rem;
+}

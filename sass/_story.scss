@@ -1,0 +1,13 @@
+.story {
+    &__prictures {
+        background-color: salmon;
+        grid-column: full-start / span 5;
+        padding: 10rem;
+    }
+
+    &__text {
+        background-color: sandybrown;
+        grid-column: auto / span 5;
+        padding: 10rem;
+    }
+}
